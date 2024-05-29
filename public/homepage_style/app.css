@@ -1,0 +1,136 @@
+/*General*/
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    width: 100%;
+    color: #777;
+    line-height: 1.8;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Barra de navegación superior*/
+.topnav {
+    background-color: #21181e;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; /*NO TOCAR! Arregla conflicto div y navbar*/
+    display: flex;
+    justify-content: space-between;
+  }
+/*Estilo de los links en la barra de navegación*/
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 32px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/*Cambiar el color de los links al pasar el ratón*/
+.topnav a:hover:not(.active) {
+    background-color: #fd6604;
+    color: #21181e;
+}
+/*Estilo imagen de prefil*/
+.profile {
+    margin-left: auto;
+    align-self: center;
+    padding-right: 2rem;
+  }
+
+/*Parallax con la imagen de fondo*/
+.bkimg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("background.jpeg");
+    min-height: 100%;
+  }
+  /*Transparencia Parallax*/
+  .opac {
+      opacity: 0.75;
+  }
+
+/*Estilo contendor inicio*/
+#home {
+    display: flex;
+  }
+
+/*Estilo Logo*/
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    align-self: center;
+  }
+
+/*Estilo marcadores*/
+.pointer {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 1024px;
+}
+
+/*Estilo bloques de texto*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*Aliniamiento texto*/
+.textright {
+    padding-left: 30px;
+}
+.textleft {
+    padding-right: 30px;
+}
+
+/*Bloque solo texto*/
+.textcontainer {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+/*Galería*/
+div.gallery {
+    margin: 32px;
+    float: left;
+    width: 1080px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+ }
+div.desc {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+/*Pie de página*/
+footer {
+    text-align: center;
+    background-color: #21181e;
+    color: white;
+}
