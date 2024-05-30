@@ -1,19 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', function(){
-    return "Login";
-});
+Route::get('/register', [RegisterController::class, 'register']);
 
-Route::get('/register', function(){
-    return "Register";
-});
+Route::get('/login', [LoginController::class, 'login']);
+Route::post('/validate', [LoginController::class, 'validate']);
+//$_POST['user'] -> Guarda los datos de campo
 
-Route::get('/dashboard', function () {
-    return "Panel de control";
-});
+Route::get('/dashboard', [LoginController::class, 'dashboard']);

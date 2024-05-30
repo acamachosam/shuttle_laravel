@@ -11,13 +11,13 @@
         <title>Laravel Transfers</title>
     </head>
 
-    <body">
+    <body>
         <!--Barra de navegación superior-->
         <div class="topnav">
-            <a href="#home">HOME</a>
-            <a href="#info">INFORMACION</a>
-            <a href="#about">SOBRE NOSOTROS</a>
-            <img src="profile.png" alt="Perfil" class="profile"></img>
+            <a href="#home" class="navbuttons">HOME</a>
+            <a href="#info" class="navbuttons">INFORMACION</a>
+            <a href="#about" class="navbuttons">SOBRE NOSOTROS</a>
+            <a href="/login" class="profile"><img src="profile.png" alt="Perfil"></img></a>
         </div>
 
         <!--Imagen Parallax con Logo-->

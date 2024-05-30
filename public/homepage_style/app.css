@@ -1,4 +1,4 @@
-/*General*/
+/*GENERAL*/
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
@@ -19,6 +19,7 @@ body, html {
     z-index: 1; /*NO TOCAR! Arregla conflicto div y navbar*/
     display: flex;
     justify-content: space-between;
+
   }
 /*Estilo de los links en la barra de navegación*/
 .topnav a {
@@ -40,7 +41,14 @@ body, html {
     align-self: center;
     padding-right: 2rem;
   }
+/*Estilo botones topnav*/
+.navbuttons{
+    align-self: center;
+}
 
+/*-----------------------------------------------------------------------------------------*/
+
+/*HOMEPAGE*/
 /*Parallax con la imagen de fondo*/
 .bkimg {
     background-attachment: fixed;
@@ -110,27 +118,29 @@ body, html {
     text-align: center;
 }
 
-/*Galería*/
-div.gallery {
-    margin: 32px;
-    float: left;
-    width: 1080px;
-}
-div.gallery:hover {
-    border: 1px solid #777;
-}
-div.gallery img {
-    width: 100%;
-    height: auto;
- }
-div.desc {
-    text-align: center;
-    padding-bottom: 8px;
-}
-
 /*Pie de página*/
 footer {
     text-align: center;
     background-color: #21181e;
     color: white;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/*LOGIN*/
+/*Estilo pagina del login*/
+.login{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("background.jpeg");
+    min-height: 100%;
+    display: grid;
+}
+/*Estilo contenedor form del login*/
+.login_form{
+    margin-top: 86.8px;
+    align-self: center;
+    justify-self: center;
 }
