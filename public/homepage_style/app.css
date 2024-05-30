@@ -57,37 +57,27 @@ body, html {
     background-size: cover;
     background-image: url("background.jpeg");
     min-height: 100%;
+    display: grid;
   }
-  /*Transparencia Parallax*/
-  .opac {
-      opacity: 0.75;
-  }
+/*Transparencia Parallax*/
+.opac {
+    opacity: 0.75;
+}
 
 /*Estilo contendor inicio*/
-#home {
-    display: flex;
-  }
-
-/*Estilo Logo*/
 .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    height: 40%;
-    padding-top: 60px;
-    padding-bottom: 20px;
     align-self: center;
+    justify-self: center;
+    width: 40%;
+    margin-top: 86.8px;
   }
 
 /*Estilo marcadores*/
 .pointer {
     margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
     align-self: center;
-    height: 1024px;
+    justify-self: center;
 }
 
 /*Estilo bloques de texto*/
@@ -96,8 +86,8 @@ body, html {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -127,9 +117,9 @@ footer {
 
 /*-----------------------------------------------------------------------------------------*/
 
-/*LOGIN*/
-/*Estilo pagina del login*/
-.login{
+/*LOGIN Y REGISTRO*/
+/*Estilo pagina del login y registro*/
+.regin{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,9 +128,68 @@ footer {
     min-height: 100%;
     display: grid;
 }
-/*Estilo contenedor form del login*/
-.login_form{
+/*Estilo contenedor del form del login y registro*/
+.form_container{
     margin-top: 86.8px;
     align-self: center;
     justify-self: center;
 }
+/*Estilo form del login y registro*/
+.form{
+    background: rgba(255,255,255,0.3);
+    padding: 3em;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(30px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+/*Estilo título del login y registro*/
+.tittle{
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0S,0,0.2);
+  }
+/*Estilo de los input y botones*/
+.input {
+    background: transparent;
+    width: 200px;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    
+    &:hover {
+      background: rgba(255,255,255,0.1);
+      box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+    }
+}
+/*Estilo de los hipervínculos*/
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    
+    &:hover {
+      text-shadow: 2px 2px 6px #00000040;
+    }
+    
+    &:active {
+      text-shadow: none;
+    }
+  }

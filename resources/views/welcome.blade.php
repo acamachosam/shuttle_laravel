@@ -26,7 +26,7 @@
         </div>
 
         <!--Imagen Parallax información-->
-        <div class="bkimg" id="info" style="opacity: 0.75;">
+        <div class="bkimg opac" id="info">
             <div class="pointer">
                 <h1 style="font-size: 80px;">INFORMACION</h1>
             </div>
@@ -57,7 +57,7 @@
         </div>
 
         <!--Imagen Parallax sobre nosotros-->
-        <div class="bkimg" id="about" style="opacity: 0.75;">
+        <div class="bkimg opac" id="about">
             <div class="pointer">
                 <h1 style="font-size: 80px;">SOBRE NOSOTROS</h1>
             </div>

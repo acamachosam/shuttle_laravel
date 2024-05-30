@@ -20,16 +20,16 @@
     </div>
 
     <!--Imagen Parallax con Logo-->
-    <div class="login">
-        <div class="login_form">
-            <form>
-                <label for="user">Email:</label>
-                <input type="text" id="user"><br>
-                <label for="password">Contraseña:</label>
-                <input type="text" id="password"><br>
-                <input type="submit" value="Acceder">
+    <div class="regin">
+        <div class="form_container">
+            <form class="form">
+                <p class="tittle">Bienvenid@</p>
+                <input type="email" class="input" placeholder="Email"><br>
+                <input type="password" class="input" placeholder="Contraseña"><br><br>
+                <input type="button" class="input" value="Acceder"><br>
+                <a class="link" href="/register">Registrarse</a><br>
+                <a class="link" href="pdte">¿No recuerdas tu contraseña?</a>
             </form>
-            <button type="button"> <a href="/register">Registrarse</a></button>
         </div>
     </div>
 </body>
