@@ -206,3 +206,42 @@ footer {
       text-shadow: none;
     }
 }
+
+/*-----------------------------------------------------------------------------------------*/
+
+/*DASHBOARDS*/
+/*Parallax con imagen de fondo*/
+.bkimgdash {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("background.jpeg");
+    min-height: 100%;
+    display: grid;
+    opacity: 0.75;
+    border-top: 86.8px;
+}
+
+/*Contenedor información*/
+.dashcont {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    margin-top: 86.8px;
+}
+
+/*Campos de información*/
+.displayinfo{
+    background: rgba(255,255,255,0.3);
+    padding: 3em;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(30px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    margin: 2rem;
+}

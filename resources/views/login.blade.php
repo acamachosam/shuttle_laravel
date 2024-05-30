@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Hoja de estilo-->
     <link rel="stylesheet" href="{{ url('/homepage_style/app.css') }}">
-        <!--Importar tipografía-->
+    <!--Importar tipografía-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <title>Acceso - Laravel Shuttles</title>
 </head>
@@ -19,14 +19,14 @@
         <a href="/login" class="profile"><img src="profile.png" alt="Perfil"></img></a>
     </div>
 
-    <!--Imagen Parallax con Logo-->
+    <!--Form de log in-->
     <div class="regin">
         <div class="form_container">
-            <form class="form">
+            <form class="form" action="/profile">
                 <p class="tittle">Bienvenid@</p>
                 <input type="email" class="input" placeholder="Email"><br>
                 <input type="password" class="input" placeholder="Contraseña"><br><br>
-                <input type="button" class="input" value="Acceder"><br>
+                <input type="submit" class="input" value="Acceder"><br>
                 <a class="link" href="/register">Registrarse</a><br>
                 <a class="link" href="pdte">¿No recuerdas tu contraseña?</a>
             </form>

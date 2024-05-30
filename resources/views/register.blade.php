@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Hoja de estilo-->
     <link rel="stylesheet" href="{{ url('/homepage_style/app.css') }}">
-        <!--Importar tipografía-->
+    <!--Importar tipografía-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <title>Registro - Laravel Transfers</title>
 </head>
@@ -19,10 +19,10 @@
         <a href="/login" class="profile"><img src="profile.png" alt="Perfil"></img></a>
     </div>
 
-    <!--Imagen Parallax con Logo-->
+    <!--Form de registro-->
     <div class="regin">
         <div class="form_container">
-            <form class="form">
+            <form class="form" action="pdte">
                 <p class="tittle">Crear cuenta nueva</p>
                 <input type="name" class="input" placeholder="Nombre"><br>
                 <input type="surname1" class="input" placeholder="Primer Apellido"><br>

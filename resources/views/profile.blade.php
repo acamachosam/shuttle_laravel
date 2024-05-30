@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ url('/homepage_style/app.css') }}">
     <!--Importar tipografía-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <title>Dashboard - Laravel Transfers</title>
+    <title>Perfil - Laravel Transfers</title>
 </head>
 <body>
     <!--Barra de navegación superior-->
@@ -23,17 +23,8 @@
     <div class="bkimgdash" id="info">
         <div class="dashcont">
             <div class="displayinfo" id="reserve">
-                <h1>Reservar</h1>
+                <h1>Información del perfil</h1>
             </div>        
-            <div class="displayinfo" id="modify">
-                <h1>Modificar</h1>
-            </div>
-            <div class="displayinfo" id="cancel">
-                <h1>Cancelar</h1>
-            </div>
-            <div class="displayinfo" id="driver">
-                <h1>Histórico de reservas</h1>
-            </div>      
         </div>
     </div>    
 </body>

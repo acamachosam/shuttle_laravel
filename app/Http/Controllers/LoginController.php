@@ -17,7 +17,19 @@ class LoginController extends Controller
         return "Login ".$x[0]->Titulo;*/
     }
 
+    public function create(){
+        
+    }
+
     function dashboard(/*$username, $password*/){
-        return "Dashboard";
+        return view('admin_dashboard');
+        /*return view('driver_dashboard');
+        return view('user_dashboard');
+        return view('corpuser_dashboard');
+        */
+    }
+
+    function profile(){
+        return view('profile');
     }
 }
