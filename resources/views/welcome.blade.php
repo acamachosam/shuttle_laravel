@@ -33,8 +33,10 @@
         </div>
         <!--Contenido información-->
         <div class="container">
-            <div><img src="shuttle.jpg" alt="Servicio Shuttle" style="width: 100%;height: 100%;"></div>
-            <div class="textright">
+            <div class="image">
+                <img src="shuttle.jpg" alt="Servicio Shuttle">
+            </div>
+            <div class="text">
                 <h1>Laravel Transfers</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat suscipit
                 eros at tempus. Etiam sodales orci id feugiat commodo. Ut dapibus augue et est iaculis
@@ -64,7 +66,7 @@
         </div>
         <!--Contenido sobre nosotros-->
         <div class="container">
-            <div class="textleft">
+            <div class="text">
                 <h1>Más de 10 años de experiencia a nuestras espaldas.</h1>
                 <p> Nulla a velit rutrum, dignissim lacus sit amet, ornare mi. Praesent et
                     bibendum neque.
@@ -95,7 +97,9 @@
                     </ul>
                 </p>
             </div>
-            <div><img src="flota.jpg" alt="Nuestra flota" style="width: 100%;height: 100%;"></div>
+            <div class="image">
+                <img src="flota.jpg" alt="Nuestra flota">
+            </div>
         </div>
 
         <!--Pie de página-->

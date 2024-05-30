@@ -23,7 +23,7 @@
     <div class="regin">
         <div class="form_container">
             <form class="form">
-                <p class="tittle">Regístrate</p>
+                <p class="tittle">Crear cuenta nueva</p>
                 <input type="name" class="input" placeholder="Nombre"><br>
                 <input type="surname1" class="input" placeholder="Primer Apellido"><br>
                 <input type="surname2" class="input" placeholder="Segundo Apellido"><br>
@@ -33,7 +33,7 @@
                 <input type="country" class="input" placeholder="País"><br>
                 <input type="email" class="input" placeholder="Email"><br>
                 <input type="password" class="input" placeholder="Contraseña"><br><br>
-                <input type="button" class="input" value="Acceder">             
+                <input type="button" class="input" value="Registrarse">             
             </form>
         </div>
     </div>
