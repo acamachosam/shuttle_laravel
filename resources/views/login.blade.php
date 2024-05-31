@@ -22,11 +22,12 @@
     <!--Form de log in-->
     <div class="regin">
         <div class="form_container">
-            <form class="form" action="/profile">
+            <form class="form" method="POST" action="/validate">
+                @csrf
                 <p class="tittle">Bienvenid@</p>
-                <input type="email" class="input" placeholder="Email"><br>
-                <input type="password" class="input" placeholder="Contraseña"><br><br>
-                <input type="submit" class="input" value="Acceder"><br>
+                <input name="email" type="text" class="input" placeholder="Email"><br>
+                <input name="password" type="password" class="input" placeholder="Contraseña"><br><br>
+                <input name="button" type="submit" class="input" value="Acceder"><br>
                 <a class="link" href="/register">Registrarse</a><br>
                 <a class="link" href="pdte">¿No recuerdas tu contraseña?</a>
             </form>
