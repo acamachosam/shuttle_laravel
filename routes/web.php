@@ -17,4 +17,4 @@ Route::post('/validate', [LoginController::class, 'validate']);
 
 //Route::get('/dashboard', [LoginController::class, 'dashboard']);
 
-Route::get('/profile', [LoginController::class, 'profile']);
+//Route::get('/profile', [LoginController::class, 'profile']);

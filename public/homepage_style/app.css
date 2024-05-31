@@ -207,6 +207,18 @@ footer {
     }
 }
 
+/*Ocultar flechas form number type*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /*-----------------------------------------------------------------------------------------*/
 
 /*DASHBOARDS*/
@@ -232,7 +244,7 @@ footer {
     margin-top: 86.8px;
 }
 
-/*Campos de información*/
+/*Campos de usuario*/
 .displayinfo{
     background: rgba(255,255,255,0.3);
     padding: 3em;
@@ -246,14 +258,9 @@ footer {
     margin: 2rem;
 }
 
-/*Ocultar flechas form number type*/
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.reservations{
+    display: flex;
 }
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+.reservations_columns{
+    padding-inline: 5rem;
 }
