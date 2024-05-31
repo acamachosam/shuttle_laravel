@@ -22,18 +22,19 @@
     <!--Form de registro-->
     <div class="regin">
         <div class="form_container">
-            <form class="form" action="pdte">
+            <form class="form" method="POST" action="/create">
+                @csrf
                 <p class="tittle">Crear cuenta nueva</p>
-                <input type="name" class="input" placeholder="Nombre"><br>
-                <input type="surname1" class="input" placeholder="Primer Apellido"><br>
-                <input type="surname2" class="input" placeholder="Segundo Apellido"><br>
-                <input type="adress" class="input" placeholder="Dirección"><br>
-                <input type="pc" class="input" placeholder="Código Postal"><br>
-                <input type="city" class="input" placeholder="Ciudad"><br>
-                <input type="country" class="input" placeholder="País"><br>
-                <input type="email" class="input" placeholder="Email"><br>
-                <input type="password" class="input" placeholder="Contraseña"><br><br>
-                <input type="button" class="input" value="Registrarse">             
+                <input name="name" type="text" class="input" placeholder="Nombre"><br>
+                <input name="surname1" type="text" class="input" placeholder="Primer Apellido"><br>
+                <input name="surname2" type="text" class="input" placeholder="Segundo Apellido"><br>
+                <input name="adress" type="text" class="input" placeholder="Dirección"><br>
+                <input name="pc" type="number" class="input" placeholder="Código Postal"><br>
+                <input name="city" type="text" class="input" placeholder="Ciudad"><br>
+                <input name="country" type="text" class="input" placeholder="País"><br>
+                <input name="email" type="email" class="input" placeholder="Email"><br>
+                <input name="password" type="password" class="input" placeholder="Contraseña"><br><br>
+                <input name="button" type="submit" class="input" value="Registrarse">             
             </form>
         </div>
     </div>
