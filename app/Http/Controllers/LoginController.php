@@ -39,8 +39,4 @@ class LoginController extends Controller
             return view('login');
         }
     }
-
-    /*function profile(){
-        return view('profile');
-    }*/
 }
