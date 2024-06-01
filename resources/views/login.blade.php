@@ -29,7 +29,8 @@
                 <input name="password" type="password" class="input" placeholder="Contraseña"><br><br>
                 <input name="button" type="submit" class="input" value="Acceder"><br>
                 <a class="link" href="/register">Registrarse</a><br>
-                <a class="link" href="pdte">¿No recuerdas tu contraseña?</a>
+                <!--Futura funcionalidad de recuperar email-->
+                <!--<a class="link" href="pdte">¿No recuerdas tu contraseña?</a>-->
             </form>
         </div>
     </div>

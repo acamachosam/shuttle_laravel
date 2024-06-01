@@ -9,6 +9,15 @@
     <!--Importar tipografía-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <title>Registro - Laravel Transfers</title>
+    <script>
+        function checkFunction() {
+            if(document.getElementById('password').value == document.getElementById('confirmpassword').value){
+                document.getElementById('button').disabled = false;
+            } else{
+                document.getElementById('button').disabled = true;
+            }
+        }
+    </script>
 </head>
 <body>
     <!--Barra de navegación superior-->
@@ -25,16 +34,17 @@
             <form class="form" method="POST" action="/create">
                 @csrf
                 <p class="tittle">Crear cuenta nueva</p>
-                <input name="name" type="text" class="input" placeholder="Nombre"><br>
-                <input name="surname1" type="text" class="input" placeholder="Primer Apellido"><br>
-                <input name="surname2" type="text" class="input" placeholder="Segundo Apellido"><br>
-                <input name="adress" type="text" class="input" placeholder="Dirección"><br>
-                <input name="pc" type="number" class="input" placeholder="Código Postal"><br>
-                <input name="city" type="text" class="input" placeholder="Ciudad"><br>
-                <input name="country" type="text" class="input" placeholder="País"><br>
-                <input name="email" type="email" class="input" placeholder="Email"><br>
-                <input name="password" type="password" class="input" placeholder="Contraseña"><br><br>
-                <input name="button" type="submit" class="input" value="Registrarse">             
+                <input name="name" type="text" class="input" placeholder="Nombre" required><br>
+                <input name="surname1" type="text" class="input" placeholder="Primer Apellido" required><br>
+                <input name="surname2" type="text" class="input" placeholder="Segundo Apellido" required><br>
+                <input name="adress" type="text" class="input" placeholder="Dirección" required><br>
+                <input name="pc" type="number" class="input" placeholder="Código Postal" required><br>
+                <input name="city" type="text" class="input" placeholder="Ciudad" required><br>
+                <input name="country" type="text" class="input" placeholder="País" required><br>
+                <input name="email" type="email" class="input" placeholder="Email" required><br>
+                <input name="password" id="password" type="password" class="input" placeholder="Contraseña" onchange="checkFunction()" required><br>
+                <input name="confirmpassword" id="confirmpassword" type="password" class="input" placeholder="Confirmar contraseña" onchange="checkFunction()" required><br><br>
+                <input name="button" id="button" type="submit" class="input" value="Registrarse" disabled>             
             </form>
         </div>
     </div>

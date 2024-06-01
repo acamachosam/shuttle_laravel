@@ -9,6 +9,16 @@
     <!--Importar tipografía-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <title>Dashboard - Laravel Transfers</title>
+    <script>
+        function selectFunction() {
+            var elements = document.getElementsByClassName('show');
+            if(elements.length > 0){
+                elements[0].className = 'hidden';
+            }
+            var x = document.getElementById("reservationtype").value;
+            document.getElementById(x).className = 'show';
+        }
+    </script>
 </head>
 <body>
     <!--Barra de navegación superior-->
@@ -25,7 +35,16 @@
             <div class="displayinfo" id="reserve">
                 <h1 style="color: white;">RESERVAR</h1>
                 <div class="reservations">   
-                    <form class="reservations_columns" method="POST" action="">
+                    <div style="padding: 0 5rem;">
+                        <select id="reservationtype" class="input" onchange="selectFunction()">
+                            <option selected disabled hidden>Tipo de reserva</option>
+                            <option value="arphtl">Aeropuerto a hotel</option>
+                            <option value="htlarp">Hotel a aeropuerto</option>
+                            <option value="roundtrip">Ida y vuelta</option>
+                        </select>
+                    </div>
+
+                    <form class="hidden" id="arphtl" method="POST" action="">
                         @csrf
                         <p class="tittle">Aeropuerto a hotel</p>
                         <label style="color: white;" for="arrivalday">Día de llegada</label><br>
@@ -37,7 +56,8 @@
                         <input name="departureairport" type="text" class="input" placeholder="Aeropuerto de origen"><br><br>
                         <br><br><input name="button" type="submit" class="input" value="Reservar"><br>
                     </form>
-                    <form class="reservations_columns" method="POST" action="">
+                    
+                    <form class="hidden" id="htlarp" method="POST" action="">
                         @csrf
                         <p class="tittle">Hotel a aeropuerto</p>
                         <label style="color: white;" for="flightday">Día del vuelo</label><br>
@@ -50,7 +70,8 @@
                         <input name="pickuphotel" type="text" class="input" placeholder="Hotel de recogida"><br><br>
                         <br><input name="button" type="submit" class="input" value="Reservar"><br>
                     </form>
-                    <div>
+                    
+                    <div class="hidden" id="roundtrip">
                         <p class="tittle">Ida y vuelta</p>
                         <form class="reservations_columns" method="POST" action="">
                             @csrf

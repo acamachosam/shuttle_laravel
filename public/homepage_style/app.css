@@ -258,9 +258,25 @@ input[type=number] {
     margin: 2rem;
 }
 
+/*Contenedores form reserva*/
+.hidden{
+    display: none;
+}
+.show{
+    display: initial;
+    padding: 0 5rem;
+}
 .reservations{
     display: flex;
+    justify-content: center;
 }
 .reservations_columns{
     padding-inline: 5rem;
+}
+
+select {
+    color: #000000;
+}
+select:invalid {
+    color: #999999;
 }
